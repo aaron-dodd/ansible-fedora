@@ -30,4 +30,31 @@ ansible-playbook -K main.yml
  - Dash to dock
  - GSConnect
  - Removeable Drive Menu
+ - Tailscale QS
+
+## Manual Steps
+
+ - Get tailscale
+
+```bash
+https://tailscale.com
+```
+
+ - Get 1password
+
+```bash
+https://1password.com
+```
+
+ - Get gitkraken
+
+```bash
+https://www.gitkraken.com
+```
+
+ - Get jetbrains
+
+```bash
+https://www.jetbrains.com
+```
 

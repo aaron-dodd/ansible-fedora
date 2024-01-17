@@ -9,19 +9,19 @@
 
 - name: enable rpm fusion repositories
   include_tasks: rpm-fusion.yml
-  tags: base_system
+  tags: base_system, rpmfusion
 
 - name: enable flatpak repositories
   include_tasks: flatpak.yml
-  tags: base_system
+  tags: base_system, flatpak
 
 - name: manage applications
   include_tasks: applications.yml
-  tags: base_system
+  tags: base_system, applications
 
 - name: tweak gnome settings
   include_tasks: gnome-settings.yml
-  tags: base_system
+  tags: base_system, gnome
 
 - name: remove unnecessary packages
   dnf:
