@@ -50,12 +50,15 @@ replacement_flatpaks:
 
 additional_native_packages:
   - "@virtualization"
-  - steam-devices
   - distrobox
   - podman
+  - steam-devices
   - yt-dlp
 
 additional_system_flatpaks:
-  - org.libreoffice.LibreOffice
+  - ch.protonmail.protonmail-bridge
   - com.mattjakeman.ExtensionManager
+  - org.gnome.World.PikaBackup
+  - org.libreoffice.LibreOffice
+  - org.mozilla.Thunderbird
 
