@@ -1,0 +1,61 @@
+---
+
+undesired_native_packages:
+  - "anaconda*"
+  - "libreoffice*"
+  - baobab
+  - cheese
+  - evince
+  - evince-djvu
+  - gnome-boxes
+  - gnome-calculator
+  - gnome-calendar
+  - gnome-characters
+  - gnome-clocks
+  - gnome-connections
+  - gnome-contacts
+  - gnome-font-viewer
+  - gnome-logs
+  - gnome-maps
+  - gnome-text-editor
+  - gnome-tour
+  - gnome-weather
+  - loupe
+  - mediawriter
+  - rhythmbox
+  - simple-scan
+  - totem
+
+replacement_flatpaks:
+  - org.fedoraproject.MediaWriter
+  - org.gnome.Boxes
+  - org.gnome.Calculator
+  - org.gnome.Calendar
+  - org.gnome.Characters
+  - org.gnome.Cheese
+  - org.gnome.Connections
+  - org.gnome.Contacts
+  - org.gnome.Evince
+  - org.gnome.Logs
+  - org.gnome.Loupe
+  - org.gnome.Maps
+  - org.gnome.Rhythmbox3
+  - org.gnome.SimpleScan
+  - org.gnome.TextEditor
+  - org.gnome.Totem
+  - org.gnome.Weather
+  - org.gnome.baobab
+  - org.gnome.clocks
+  - org.gnome.font-viewer
+
+additional_native_packages:
+  - "@virtualization"
+  - steam-devices
+  - distrobox
+  - podman
+  - yt-dlp
+
+additional_system_flatpaks:
+  - org.libreoffice.LibreOffice
+  - com.mattjakeman.ExtensionManager
+

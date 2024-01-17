@@ -1,0 +1,34 @@
+---
+
+- name: enable system-level flathub repository
+  community.general.flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+  become: yes
+  tags: flatpak
+
+- name: enable system-level flathub-beta repository
+  community.general.flatpak_remote:
+    name: flathub-beta
+    state: present
+    flatpakrepo_url: https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+  become: yes
+  tags: flatpak
+
+- name: enable user-level flatpak repositories
+  community.general.flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+    method: user
+  tags: flatpak
+
+- name: enable user-level flathub-beta repository
+  community.general.flatpak_remote:
+    name: flathub-beta
+    state: present
+    flatpakrepo_url: https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+    method: user
+  tags: flatpak
+

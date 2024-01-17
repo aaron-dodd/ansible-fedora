@@ -1,0 +1,38 @@
+---
+
+- name: remove applications with flatpak equivalents
+  dnf:
+    name: "{{ undesired_native_packages }}"
+    state: absent
+  become: yes
+  tags: applications
+
+- name: install flatpak replacements
+  community.general.flatpak:
+    name: "{{ replacement_flatpaks }}"
+    state: present
+  become: yes
+  tags: applications
+
+- name: install additional system flatpaks
+  community.general.flatpak:
+    name: "{{ additional_system_flatpaks }}"
+    state: present
+  become: yes
+  tags: applications
+
+- name: install GIMP from flathub beta
+  community.general.flatpak:
+    name: org.gimp.GIMP
+    state: present
+    remote: flathub-beta
+  become: yes
+  tags: applications
+
+- name: install additional system packages
+  dnf:
+    name: "{{ additional_native_packages }}"
+    state: latest
+  become: yes
+  tags: applications
+
