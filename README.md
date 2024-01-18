@@ -27,6 +27,7 @@ ansible-playbook -K main.yml
 
  - Alphabetical App Grid
  - AppIndicators and KStatusNotifierItem Support
+ - Caffeine
  - Dash to dock
  - GSConnect
  - Removeable Drive Menu
