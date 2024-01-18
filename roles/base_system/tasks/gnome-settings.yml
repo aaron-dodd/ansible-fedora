@@ -10,11 +10,6 @@
     gsettings set org.gnome.desktop.interface color-scheme prefer-dark
   tags: gnome
 
-- name: Enable minimize, maximize and close buttons
-  ansible.builtin.command: |
-    gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
-  tags: gnome
-
 - name: Enable tap-to-click
   ansible.builtin.command: |
     gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true

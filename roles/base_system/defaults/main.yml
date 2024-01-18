@@ -54,6 +54,11 @@ replacement_flatpaks:
 additional_native_packages:
   - "@virtualization"
   - distrobox
+  - fcitx5
+  - fcitx5-hangul
+  - fcitx5-mozc
+  - fcitx5-rime
+  - gnome-tweaks
   - podman
   - steam-devices
   - yt-dlp
