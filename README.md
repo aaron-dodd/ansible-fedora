@@ -29,6 +29,7 @@ ansible-playbook -K main.yml
  - AppIndicators and KStatusNotifierItem Support
  - Caffeine
  - GSConnect
+ - Input Method Panel
  - Removeable Drive Menu
  - Tailscale QS
 
