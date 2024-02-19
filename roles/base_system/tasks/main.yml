@@ -7,10 +7,6 @@
   become: yes
   tags: base_system
 
-- name: enable rpm fusion repositories
-  include_tasks: rpm-fusion.yml
-  tags: base_system, rpmfusion
-
 - name: enable flatpak repositories
   include_tasks: flatpak.yml
   tags: base_system, flatpak

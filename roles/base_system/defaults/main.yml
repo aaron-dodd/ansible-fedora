@@ -7,6 +7,8 @@ undesired_native_packages:
   - cheese
   - evince
   - evince-djvu
+  - firefox
+  - firefox-langpacks
   - gnome-boxes
   - gnome-calculator
   - gnome-calendar
@@ -47,6 +49,7 @@ replacement_flatpaks:
   - org.gnome.baobab
   - org.gnome.clocks
   - org.gnome.font-viewer
+  - org.mozilla.firefox
 
 additional_native_packages:
   - "@virtualization"
@@ -57,7 +60,6 @@ additional_native_packages:
   - fcitx5-rime
   - gnome-tweaks
   - podman
-  - steam-devices
   - yt-dlp
 
 additional_system_flatpaks:
