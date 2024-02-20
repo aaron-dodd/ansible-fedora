@@ -19,6 +19,10 @@
   include_tasks: 1password.yml
   tags: base-system, applications, 1password
 
+- name: install prompt / ptyxis
+  include_tasks: prompt-ptyxis.yml
+  tags: base-system, applications, terminal
+
 - name: tweak gnome settings
   include_tasks: gnome-settings.yml
   tags: base-system, gnome

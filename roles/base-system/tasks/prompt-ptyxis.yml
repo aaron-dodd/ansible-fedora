@@ -1,0 +1,16 @@
+---
+
+- name: enable gnome-nightly flatpak repository
+  community.general.flatpak_remote:
+    name: gnome-nightly
+    state: present
+    flatpakrepo_url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
+  tags: terminal
+
+- name: install prompt / ptyxis terminal from gnome-nightly
+  community.general.flatpak:
+    name: org.gnome.Ptyxis.Devel
+    remote: gnome-nightly
+    state: present
+  tags: terminal
+
