@@ -5,23 +5,27 @@
     name: "*"
     state: latest
   become: yes
-  tags: base_system
+  tags: base-system
 
 - name: enable flatpak repositories
   include_tasks: flatpak.yml
-  tags: base_system, flatpak
+  tags: base-system, flatpak
 
 - name: manage applications
   include_tasks: applications.yml
-  tags: base_system, applications
+  tags: base-system, applications
+
+- name: install 1Password
+  include_tasks: 1password.yml
+  tags: base-system, applications, 1password
 
 - name: tweak gnome settings
   include_tasks: gnome-settings.yml
-  tags: base_system, gnome
+  tags: base-system, gnome
 
 - name: remove unnecessary packages
   dnf:
     autoremove: yes
   become: yes
-  tags: base_system
+  tags: base-system
 

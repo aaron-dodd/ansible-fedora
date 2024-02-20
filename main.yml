@@ -3,5 +3,5 @@
 - hosts: localhost
   gather_facts: true
   roles:
-    - base_system
+    - base-system
 
