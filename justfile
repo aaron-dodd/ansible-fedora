@@ -12,6 +12,8 @@ gnome-extensions:
     pip install --upgrade gnome-extensions-cli
     gext disable background-logo@fedorahosted.org
     gext install AlphabeticalAppGrid@stuarthayhurst
+    gext install appindicatorsupport@rgcjonas.gmail.com
+    gext install kimpanel@kde.org
 
 vivaldi:
     #! /usr/bin/env bash
