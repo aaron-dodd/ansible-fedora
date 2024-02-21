@@ -7,6 +7,8 @@ undesired_native_packages:
   - cheese
   - evince
   - evince-djvu
+  - firefox
+  - firefox-langpacks
   - gnome-boxes
   - gnome-calculator
   - gnome-calendar
@@ -47,6 +49,7 @@ replacement_flatpaks:
   - org.gnome.baobab
   - org.gnome.clocks
   - org.gnome.font-viewer
+  - org.mozilla.firefox
 
 additional_native_packages:
   - "@virtualization"
@@ -71,9 +74,12 @@ additional_system_flatpaks:
   - com.mattjakeman.ExtensionManager
   - com.transmissionbt.Transmission
   - com.usebottles.bottles
+  - com.valvesoftware.Steam
+  - com.vivaldi.Vivaldi
   - io.github.flattool.Warehouse
   - it.mijorus.gearlever
   - org.gnome.World.PikaBackup
+  - org.keepassxc.KeePassXC
   - org.libreoffice.LibreOffice
   - org.mozilla.Thunderbird
 

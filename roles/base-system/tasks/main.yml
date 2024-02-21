@@ -15,10 +15,6 @@
   include_tasks: applications.yml
   tags: base-system, applications
 
-- name: install 1Password
-  include_tasks: 1password.yml
-  tags: base-system, applications, 1password
-
 - name: install prompt / ptyxis
   include_tasks: prompt-ptyxis.yml
   tags: base-system, applications, terminal
