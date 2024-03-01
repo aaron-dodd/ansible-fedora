@@ -82,4 +82,5 @@ additional_system_flatpaks:
   - org.gnome.World.PikaBackup
   - org.libreoffice.LibreOffice
   - org.mozilla.Thunderbird
+  - org.videolan.VLC
 
