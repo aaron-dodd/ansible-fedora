@@ -15,3 +15,8 @@
     gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
   tags: gnome
 
+- name: Enable accessibility menu
+  ansible.builtin.command: |
+    gsettings set org.gnome.desktop.a11y always-show-universal-access-status true
+  tags: gnome
+
