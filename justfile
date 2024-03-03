@@ -1,13 +1,15 @@
 default:
     just --list
 
-chezmoi:
+# Install my dotfiles for the current user.
+dotfiles:
     #! /usr/bin/env bash
     pushd "$HOME"
     sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply aaron-dodd
     pushd "$HOME/.local/share/chezmoi"
     git remote set-url origin git@github.com:aaron-dodd/dotfiles
 
+# Add and configure recommended gnome-extensions.
 gnome-extensions:
     pip install --upgrade gnome-extensions-cli
     gext disable background-logo@fedorahosted.org
@@ -15,6 +17,7 @@ gnome-extensions:
     gext install appindicatorsupport@rgcjonas.gmail.com
     gext install kimpanel@kde.org
 
+# Install jetbrains toolbox.
 jetbrains-toolbox:
     #!/usr/bin/env bash
     pushd "$(mktemp -d)"

@@ -1,61 +1,59 @@
 # Installation Instructions
 
- - [ ] Install vanilla fedora workstation
- - [ ] Go through the first time setup
- - [ ] Install ansible
+- [ ] Install fedora workstation.
+- [ ] Go through the first time setup.
+- [ ] Install ansible with the following command:
 
 ```bash
 sudo dnf install ansible
 ```
 
-- [ ] Clone the repository
+- [ ] Clone the repository with the following command:
 
 ```bash
 git clone https://github.com/aaron-dodd/ansible-fedora
 cd ansible-fedora
 ```
 
-- [ ] Run the playbook
+- [ ] Run the playbook with the following command:
 
 ```bash
 ansible-playbook -K main.yml
 ```
 
-- [ ] Install GNOME extensions
-
-## Gnome Extensions
-
- - Alphabetical App Grid
- - AppIndicators and KStatusNotifierItem Support
- - Caffeine
- - GSConnect
- - Input Method Panel
- - Removeable Drive Menu
- - Tailscale QS
-
 ## Manual Steps
 
- - Get tailscale
+- Copy password store to home directory.
+- Set a hostname with the following command:
 
 ```bash
-https://tailscale.com
+sudo hostnamectl set-hostname <hostname>
 ```
 
- - Get 1password
+- Enable syncthing with the following command:
 
 ```bash
-https://1password.com
+systemctl --user enable syncthing.service
+systemctl --user start syncthing.service
 ```
 
- - Get gitkraken
+- Setup dotfiles with the following command:
 
 ```bash
-https://www.gitkraken.com
+just dotfiles
 ```
 
- - Get jetbrains
+- Get recommended gnome extensions with the following command:
 
 ```bash
-https://www.jetbrains.com
+just gnome-extensions
 ```
+
+- Get jetbrains toolbox for IDEs with the following command:
+
+```bash
+just jetbrains-toolbox
+```
+
+- Login to jetbrains toolbox.
 
