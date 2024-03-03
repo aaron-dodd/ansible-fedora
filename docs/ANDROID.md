@@ -43,5 +43,6 @@ are much better about this.
 - Stremio.
 - Syncthing.
 - Tachiyomi J2K.
+- Termux.
 - UnexpectedKeyboard.
 
