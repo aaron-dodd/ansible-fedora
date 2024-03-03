@@ -66,6 +66,7 @@ additional_native_packages:
   - python3
   - python3-pip
   - steam-devices
+  - syncthing
   - yt-dlp
 
 additional_system_flatpaks:
