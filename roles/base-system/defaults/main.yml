@@ -62,6 +62,7 @@ additional_native_packages:
   - just
   - keepassxc
   - podman
+  - powertop
   - python3
   - python3-pip
   - steam-devices
